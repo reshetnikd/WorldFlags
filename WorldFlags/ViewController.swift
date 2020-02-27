@@ -24,14 +24,16 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Country", for: indexPath)
         cell.textLabel?.text = countries[indexPath.row].count <= 2 ? countries[indexPath.row].uppercased() : countries[indexPath.row].capitalized
+        cell.imageView?.image = UIImage(named: countries[indexPath.row])
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
-            vc.selectedImage = countries[indexPath.row]
+            vc.country = tableView.cellForRow(at: indexPath)?.textLabel?.text
+            vc.flag = countries[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
         }
     }
