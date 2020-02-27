@@ -13,6 +13,7 @@
 		35D32D892407F8A300523A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D32D872407F8A300523A40 /* Main.storyboard */; };
 		35D32D8B2407F8A400523A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D32D8A2407F8A400523A40 /* Assets.xcassets */; };
 		35D32D8E2407F8A400523A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D32D8C2407F8A400523A40 /* LaunchScreen.storyboard */; };
+		35D32D962408042B00523A40 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D32D952408042B00523A40 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		35D32D8A2407F8A400523A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35D32D8D2407F8A400523A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35D32D8F2407F8A400523A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35D32D952408042B00523A40 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				35D32D812407F8A300523A40 /* AppDelegate.swift */,
 				35D32D832407F8A300523A40 /* SceneDelegate.swift */,
 				35D32D852407F8A300523A40 /* ViewController.swift */,
+				35D32D952408042B00523A40 /* DetailViewController.swift */,
 				35D32D872407F8A300523A40 /* Main.storyboard */,
 				35D32D8A2407F8A400523A40 /* Assets.xcassets */,
 				35D32D8C2407F8A400523A40 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				35D32D862407F8A300523A40 /* ViewController.swift in Sources */,
 				35D32D822407F8A300523A40 /* AppDelegate.swift in Sources */,
 				35D32D842407F8A300523A40 /* SceneDelegate.swift in Sources */,
+				35D32D962408042B00523A40 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36JR7N2LBE;
 				INFOPLIST_FILE = WorldFlags/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.stanford.WorldFlags;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36JR7N2LBE;
 				INFOPLIST_FILE = WorldFlags/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.stanford.WorldFlags;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
