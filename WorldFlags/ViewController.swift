@@ -14,6 +14,15 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        let fm = FileManager.default
+//        let path = Bundle.main.resourcePath!
+//        let items = try! fm.contentsOfDirectory(atPath: path)
+//
+//        for item in items {
+//            if item.hasSuffix("@3x.png") {
+//                countries.append(item)
+//            }
+//        }
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
         title = "World Flags"
         navigationController?.navigationBar.prefersLargeTitles = true
